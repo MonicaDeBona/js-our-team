@@ -79,11 +79,7 @@ for (let i = 0; i < teamMember.length; i++) {
     team.append(card);
 
     const currentMember = teamMember[i];
-    card.innerHTML += `<h3>${currentMember.nome}</h3>`
-    card.innerHTML += `<p>${currentMember.ruolo}</p>`
-    card.innerHTML += `<img src= + "./img/" + ${currentMember.foto} + </img>`;
+    card.innerHTML += `<h3>${currentMember.nome}</h3>`;
+    card.innerHTML += `<p>${currentMember.ruolo}</p>`;
+    card.innerHTML += `<img src="./img/${currentMember.foto}"</img>`;
 }
-
-
-//BONUS 1:
-//Trasformare la stringa foto in una immagine effettiva
